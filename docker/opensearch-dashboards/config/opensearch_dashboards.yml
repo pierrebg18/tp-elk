@@ -1,8 +1,2 @@
-# Configuration minimale d'OpenSearch Dashboards pour le TP
-# L'adresse d'OpenSearch est fournie par la variable OPENSEARCH_HOSTS du docker-compose.yml
-
-# Écoute sur toutes les interfaces pour être accessible depuis l'hôte (http://localhost:5601)
-server.host: '0.0.0.0'
-
-# Interface de gestion des modèles de ML (partie 3)
-ml_commons_dashboards.enabled: true
+server.host: "0.0.0.0"
+opensearch.hosts: ["http://opensearch:9200"]
